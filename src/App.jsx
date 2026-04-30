@@ -18,7 +18,7 @@ function App() {
         <ul className="list-group list-group-horizontal list-unstyled mb-2">
           <Buttons
             listLanguages={languages}
-            onSelect={clickHadler}
+            selected={clickHadler}
             activeId={active ? active.id : null} />
         </ul>
         <div className="mt-3">
