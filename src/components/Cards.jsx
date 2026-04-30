@@ -14,4 +14,4 @@ function Cards(props) {
         <>{listaLinguaggiJsx}</>
     )
 }
-export default Card
+export default Cards;
