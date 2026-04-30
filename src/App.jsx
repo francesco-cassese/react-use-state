@@ -1,5 +1,5 @@
-import Button from "./components/Buttons.jsx";
-import Card from "./components/Cards.jsx";
+import Buttons from "./components/Buttons.jsx";
+import Cards from "./components/Cards.jsx";
 import languages from "./data/languages.js";
 
 function App() {
