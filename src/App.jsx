@@ -1,8 +1,14 @@
 import Buttons from "./components/Buttons.jsx";
 import Cards from "./components/Cards.jsx";
 import languages from "./data/languages.js";
+import { useState } from "react";
+
 
 function App() {
+  const [active, setActive] = useState(null);
+  const clickHadler = linguaggio => {
+    setActive(linguaggio);
+  };
   return <>
     <header>
       <h1 className="m-4">Learn Web Development</h1>
@@ -10,9 +16,14 @@ function App() {
     <main>
       <div className="container">
         <ul className="list-group list-group-horizontal list-unstyled mb-2">
-          <Buttons listLanguages={languages} />
+          <Buttons
+            listLanguages={languages}
+            onSelect={clickHadler}
+            activeId={active ? active.id : null} />
         </ul>
-        <Cards listLanguages={languages} />
+        <div className="mt-3">
+          {active && <Cards info={active} />}
+        </div>
       </div>
     </main>
   </>
