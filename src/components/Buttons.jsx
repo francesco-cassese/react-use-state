@@ -11,4 +11,4 @@ function Buttons(props) {
         <>{buttonListJsx}</>
     )
 }
-export default Button
+export default Buttons;
