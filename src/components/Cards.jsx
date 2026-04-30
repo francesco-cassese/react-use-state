@@ -1,4 +1,4 @@
-function Card(props) {
+function Cards(props) {
     const listaLinguaggiJsx = props.listLanguages.map(language => {
         const { id, title, description } = language;
         return (
