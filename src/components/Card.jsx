@@ -4,7 +4,7 @@ function Card(props) {
         return (
             <div key={id} className="card">
                 <div className="card-body">
-                    <button className="btn btn-primary">{title}</button>
+                    <h2>{title}</h2>
                     <p>{description}</p>
                 </div>
             </div>
