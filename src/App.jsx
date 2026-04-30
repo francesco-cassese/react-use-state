@@ -10,9 +10,9 @@ function App() {
     <main>
       <div className="container">
         <ul className="list-group list-group-horizontal list-unstyled mb-2">
-          <Button listLanguages={languages} />
+          <Buttons listLanguages={languages} />
         </ul>
-        <Card listLanguages={languages} />
+        <Cards listLanguages={languages} />
       </div>
     </main>
   </>
